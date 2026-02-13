@@ -1,0 +1,15 @@
+N, K = map(int, input().split())
+
+left = 0
+right = 10 **9
+
+while left < right:
+  mid = (left + right) //2
+  
+  #0年後~mid年後の合計
+  total = (mid+1)*N + mid * (mid+1) //2
+  
+  if total >= K:
+    right = mid
+  else:
+    left = mid + 1
