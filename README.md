@@ -1,2 +1,3 @@
 # atcoder-practice
-Atcoderの練習ログ
+Atcoder-Begginer-Contestの練習ログ
+A,B問題のみ解いていく
