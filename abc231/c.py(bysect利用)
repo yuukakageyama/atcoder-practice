@@ -1,0 +1,14 @@
+import bisect #二分探索を高速にやってくれる
+
+N,Q = map(int, input().split())
+#ディクショナリ作るのかも？？
+A = list(map(int, input().split()))
+A.sort()
+  
+#入力値を昇順にsort
+
+#xを1個ずつ処理
+for _ in range(Q):
+  x = int(input())
+  idx = bisect.bisect_left(A, x) #x以上が最初に出る位置
+  print(N-idx)
