@@ -20,6 +20,8 @@ for a in A:
 
 # Tは曲の途中なので T < pref[i]となる最初のiを探す
 #bisect_rightで配列prefで値Tを二分探索して右側の挿入点を探す
+#bisect_rightはTより大きい最初の位置
+#bisect_leftはT以上の最初の位置
 i = bisect.bisect_right(pref, T)
 
 #曲番号は
